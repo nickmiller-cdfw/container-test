@@ -18,9 +18,6 @@ jobs:
       - name: Checkout Repository
         uses: actions/checkout@v4
 
-      - name: Set up Apptainer
-        uses: eWaterTree/setup-apptainer@v2 # or use a trusted Apptainer setup action
-
       - name: Build SIF Image
         run: |
           apptainer build basespace.sif basespace.def
