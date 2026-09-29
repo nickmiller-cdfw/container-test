@@ -18,6 +18,14 @@ jobs:
       - name: Checkout Repository
         uses: actions/checkout@v4
 
+      - name: Install apptainer
+        run: |
+          sudo apt update
+          sudo apt install -y wget
+          cd /tmp
+          wget https://github.com/apptainer/apptainer/releases/download/v1.5.4/apptainer_1.5.4_amd64.deb
+          sudo apt install -y ./apptainer_1.5.4_amd64.deb
+
       - name: Build SIF Image
         run: |
           apptainer build basespace.sif basespace.def
