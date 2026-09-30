@@ -6,4 +6,3 @@ apk add --no-cache wget
 wget "https://launch.basespace.illumina.com/CLI/latest/amd64-linux/bs"
 chmod a+x ./bs
 mv ./bs /usr/bin/bs
-echo "done"
