@@ -4,7 +4,6 @@ name: Build and publish basespace CLI container
 
 on:
   push:
-  # Or target specific branches/tags
     branches: [ "main" ]
       paths:
         -  basespace.def
