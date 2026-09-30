@@ -6,6 +6,8 @@ on:
   push:
   # Or target specific branches/tags
     branches: [ "main" ]
+      paths:
+        -  basespace.def
 
 jobs:
   build-push:
