@@ -4,9 +4,8 @@ name: Build and publish basespace CLI container
 
 on:
   push:
-    branches: [ "main" ]
-      paths:
-        -  basespace.def
+    paths:
+      -  basespace.def
 
 jobs:
   build-push:
