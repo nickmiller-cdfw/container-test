@@ -36,5 +36,5 @@ jobs:
 
       - name: Push Container to GHCR
         run: |
-          IMAGE_TAG=ghcr.io/${{ github.repository }}/basespace:latest
+          IMAGE_TAG=ghcr.io/${{ github.repository }}:latest
           apptainer push basespace.sif oras://$IMAGE_TAG
